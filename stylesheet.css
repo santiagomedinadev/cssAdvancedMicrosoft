@@ -54,6 +54,14 @@ Layout Styles
 ****************************
 ***************************/
 
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px; /* 15px + 1170px + 15px = 1200px es nuestro brakepoint*/
+}
+
 
 /***************************
 ****************************
