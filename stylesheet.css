@@ -62,6 +62,17 @@ Layout Styles
     max-width: 1170px; /* 15px + 1170px + 15px = 1200px es nuestro brakepoint*/
 }
 
+.row {
+    margin-right: -15px; /* Dado que el contenedor tiene un padding de 15 px agregamos una margen de 15px para que quede al ras con el contenedor*/
+    margin-left: -15px;
+}
+
+.row:after { /*Nos permite corregir cualquier elemento flotante dentro del contenedor y sea tomado en cuenta sus dimensiones*/
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /***************************
 ****************************
