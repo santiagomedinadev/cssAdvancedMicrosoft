@@ -59,7 +59,7 @@ Layout Styles
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1170px; /* 15px + 1170px + 15px = 1200px es nuestro brakepoint*/
+    max-width: 1170px; /* 15px + 1170px + 15px = 1200px es nuestro breakpoint*/
 }
 
 .row {
@@ -73,14 +73,14 @@ Layout Styles
     clear: both;
 }
 
-[class*='col-'] { /*Este selector se aplica a toda clase que comience con col-*/
+[class*='col-'] { /*Este selector se aplica a toda clase que comience con col-, aplicamos width 100% debido a que estamos diseñando pensando en mobile first donde en dispositivos pequeños las columnas ocupan todo el espacio*/
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 /* Media Query excludes extra small devices and includes small and above */
-@media (min-width: 48em) { /*excluye extra small devices-incluye el resto de tamaños*/
+@media (min-width: 48em) { /*excluye extra small devices - incluye el resto de tamaños*/
     [class*='col-'] {
         float: left;
     }
