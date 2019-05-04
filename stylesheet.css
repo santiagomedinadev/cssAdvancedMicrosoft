@@ -73,6 +73,27 @@ Layout Styles
     clear: both;
 }
 
+[class*='col-'] { /*Este selector se aplica a toda clase que comience con col-*/
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Media Query excludes extra small devices and includes small and above */
+@media (min-width: 48em) { /*excluye extra small devices-incluye el resto de tamaños*/
+    [class*='col-'] {
+        float: left;
+    }
+    /* Column Third */
+    .col-1-3 {
+        width: 33.3333%;
+    }
+    /* Column Two Thirds */
+    .col-2-3 {
+        width: 66.6666%;
+    }
+}
+
 
 /***************************
 ****************************
