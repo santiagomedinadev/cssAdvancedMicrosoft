@@ -128,6 +128,18 @@ Modules
   color: white;
 }
 
+.btn-toggle-menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+@media (min-width: 48em){
+  .btn-toggle-menu{
+    display:none;
+  }
+}
+
 /*Header Modules*/
 .header-primary {
   background: #9B8579;
@@ -160,6 +172,13 @@ Modules
 
 .nav-primary {
   margin-top: 35px;
+  display: none;
+}
+
+@media (min-width: 48em){
+  .nav-primary {
+    display:block;
+  }
 }
 
 /***************************
