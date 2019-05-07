@@ -192,6 +192,14 @@ Modules
   padding-bottom: 25px;
 }
 
+.hero-primary.bg-image > img {
+  opacity: 0.55;
+}
+
+.hero-body {
+  position: relative;
+}
+
 .hero-title {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -206,6 +214,23 @@ Modules
 
 .hero-subtitle + button {
   margin-top: 25px;
+}
+
+/*Background Modules*/
+.bg-image  {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-image > img {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
 }
 
 
