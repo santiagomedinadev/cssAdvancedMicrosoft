@@ -74,6 +74,10 @@ Layout Styles
   .col-1-3 {
     width: 33.3333%;
   }
+
+  .col-1-2 {
+    width: 50%;
+  }
 }
 
 @media (min-width: 48em) {
@@ -233,6 +237,21 @@ Modules
   min-width: 100%;
 }
 
+/*Media Object Module*/
+.media, .media-body { /*evita que el objeto multimedia se ajuste*/
+  overflow:hidden;
+}
+
+.media-item {
+  float:left;
+  margin-right: 10px;
+}
+
+.media-item i {
+  color: #594a42;
+  font-size: 5em;
+}
+
 
 /***************************
 ****************************
@@ -250,4 +269,8 @@ Theme Styles
 }
 .background-quaternary {
   background: #594a42;
+}
+
+.background-quinary {
+  background: #e7e1d7;
 }
