@@ -1,3 +1,6 @@
+$gutter: 30px;
+$gutter-margin: ($gutter/2);
+
 
 /***************************
 ****************************
@@ -14,8 +17,8 @@ Layout Styles
 }
 /* Row */
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: (-$gutter-margin);
+  margin-left: (-$gutter-margin);
 }
 /* Row Clear Float*/
 .row:after {
@@ -26,25 +29,33 @@ Layout Styles
 /* Media Query excludes extra small devices and includes small and above */
 [class*='col-'] {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: $gutter-margin;
+  padding-right: $gutter-margin;
 }
 
 @media (min-width: 48em) {
   [class*='col-'] {
     float: left;
   }
-  /* Column Two Thirds */
+
+  .col-1-12{
+    width: (100% / 12);
+  }
+
+  .col-1-6 {
+    width: (100% / 6);
+  }
+
   .col-2-3 {
-    width: 66.6666%;
+    width: (100% / 1.5);
   }
-  /* Column Third */
+  
   .col-1-3 {
-    width: 33.3333%;
+    width: (100% / 3);
   }
-  /* Column Half */
+  
   .col-1-2 {
-    width: 50%;
+    width: (100% / 2);
   }
 }
 

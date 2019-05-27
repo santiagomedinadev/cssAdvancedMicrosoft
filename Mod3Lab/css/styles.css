@@ -439,13 +439,14 @@ Layout Styles
 @media (min-width: 48em) {
   [class*='col-'] {
     float: left; }
-  /* Column Two Thirds */
+  .col-1-12 {
+    width: 8.33333%; }
+  .col-1-6 {
+    width: 16.66667%; }
   .col-2-3 {
-    width: 66.6666%; }
-  /* Column Third */
+    width: 66.66667%; }
   .col-1-3 {
-    width: 33.3333%; }
-  /* Column Half */
+    width: 33.33333%; }
   .col-1-2 {
     width: 50%; } }
 
@@ -608,3 +609,5 @@ Theme Styles
 
 .background-quinary {
   background: #e7e1d7; }
+
+/* 768px = 48em */

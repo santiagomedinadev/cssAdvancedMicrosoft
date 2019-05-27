@@ -1,0 +1,13 @@
+$mq-1: 48em !default; /* 768px = 48em */
+@mixin extra-small-only {
+    //0.0625 is a pixel, it remove one pixel to the next media query mixin will not overlap
+    @media only screen and (max-width : $mq-1 - 0.0625) {
+        @content;
+    }
+}
+
+@mixin small-and-above {
+    @media only screen and (min-width : $mq-1) {
+        @content;
+    }
+}
