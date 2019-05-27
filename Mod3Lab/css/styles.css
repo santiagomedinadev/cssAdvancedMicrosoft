@@ -364,6 +364,7 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+/* 768px = 48em */
 /*
 Color List:
 - light blue = 00AEEF;
@@ -514,6 +515,16 @@ Header Modules
   text-align: center;
   padding-top: 18px;
   padding-bottom: 18px; }
+  @media only screen and (min-width: 48em) {
+    .header-primary {
+      background: none;
+      position: absolute;
+      z-index: 99;
+      width: 100%; }
+      .header-primary:after {
+        content: "";
+        display: table;
+        clear: both; } }
 
 /***************************
 Hero Modules
@@ -526,6 +537,9 @@ Hero Modules
   color: white;
   padding-top: 25px;
   padding-bottom: 25px; }
+  @media only screen and (min-width: 48em) {
+    .hero-primary {
+      padding-top: 150px; } }
 
 .hero-primary.bg-image > img {
   opacity: 0.55; }
@@ -557,6 +571,11 @@ Logo Modules
 .logo-primary {
   width: 64px;
   height: 64px; }
+  @media only screen and (min-width: 48em) {
+    .logo-primary {
+      width: auto;
+      height: 50px;
+      float: left; } }
 
 .logo-primary img {
   height: 100%; }
@@ -589,6 +608,14 @@ Nav Modules
 
 .nav-primary {
   margin-top: 28px; }
+  @media only screen and (min-width: 48em) {
+    .nav-primary {
+      float: right;
+      width: 60%;
+      text-align: right;
+      margin-top: 0px; }
+      .nav-primary li {
+        display: inline-block; } }
 
 /***************************
 ****************************
@@ -609,5 +636,3 @@ Theme Styles
 
 .background-quinary {
   background: #e7e1d7; }
-
-/* 768px = 48em */

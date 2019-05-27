@@ -10,6 +10,9 @@ Hero Modules
     color: white;
     padding-top: 25px;
     padding-bottom: 25px;
+    @include small-and-above {
+        padding-top: 150px;
+    }
 }
 
 .hero-primary.bg-image>img {
