@@ -137,6 +137,10 @@ siguiendo la regla del diseño responsive "mobile first", vamos a crear nuestras
     .col-2-3 {
         width: 66.6666%;
     }
+
+    .col-1-2 {
+        width: 50%;
+    }
 }
 
 @media (min-width: 48em) {
