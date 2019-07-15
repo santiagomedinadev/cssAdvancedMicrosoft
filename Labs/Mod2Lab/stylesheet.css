@@ -212,7 +212,22 @@ Modules
   padding-bottom: 25px;
 }
 
-.hero-primary.bg-image > img {
+.hero-secundary {
+  background-color: #594a42;
+  color: white;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  font-style: italic;
+}
+
+@media only screen and (min-width : 48em) {
+  .hero-secundary {
+    padding-top: 3.75em;
+    padding-bottom: 3.75em;
+  }
+}
+
+.hero-primary.bg-image > img, .hero-secundary.bg-image > img  {
   opacity: 0.55;
 }
 
@@ -254,6 +269,14 @@ Modules
 }
 
 /*Media Object Module*/
+.media-object {
+  padding-top: 2.5em;
+}
+
+.media {
+  padding-bottom: 2.5em;
+}
+
 .media, .media-body { /*evita que el objeto multimedia se ajuste*/
   overflow:hidden;
 }
@@ -261,13 +284,31 @@ Modules
 .media-item {
   float:left;
   margin-right: 10px;
+  width: 30%;
 }
-
 .media-item i {
   color: #594a42;
   font-size: 5em;
 }
 
+@media only screen and (min-width : 48em) {
+  .media-item i {
+    font-size: 7em;
+  }
+} 
+
+.media-item img {
+  display:block;
+}
+
+.media-body > p {
+  margin-bottom: 2.5em;
+  margin-top: 0px;
+}
+
+.media-body > h4 {
+  margin: 0px;
+}
 
 /***************************
 ****************************
