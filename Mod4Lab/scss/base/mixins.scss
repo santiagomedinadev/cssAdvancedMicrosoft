@@ -1,0 +1,20 @@
+@mixin circle($width) {
+  width: $width;
+  height: $width;
+  border-radius: $width/2;
+}
+
+@mixin flexbox-display {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;  /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
